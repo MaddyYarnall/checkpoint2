@@ -1,0 +1,14 @@
+
+
+.truck{
+  height: 300px;
+  width: 500px;
+}
+
+.truck:hover {
+  cursor: pointer;
+}
+
+.toolss{
+  cursor: pointer;
+}

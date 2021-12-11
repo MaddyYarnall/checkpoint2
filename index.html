@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> Mechanic Idle Game </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <header class="text-center bg-secondary text-light">
+      <h1>Fufill your dreams of becoming a mechanic!</h1>
+      <h3>Make money and grow your shop!</h3>
+    </header>
+
+<!-- This is the container for the clickable image, money amnt, and for the inventory box -->
+    <main class="container-fluid">
+      <div class="row">
+       <div class="col-6 d-flex justify-content-center text-center">
+        <img src="https://www.topgear.com/sites/default/files/2021/06/Hennessey%20Mammoth%201000%20TRX_006.jpg" alt="truck" class="truck" onclick="makeMoney()">
+        
+       </div>
+
+
+       <div class="col-4 d-flex justify-content-between">
+        <h1 id="totalMoney" class="">0</h1>
+
+        <div class="row">
+          <div class="col-12 pr-5 border border-4 border-dark">
+            <h3>INVENTORY:</h3> 
+            <p>Tools:</p> 
+            <h5 id="toolInven">0</h5>
+            <p>Advertisements:</p>
+            <h5 id="adInven">0</h5>
+            <p>Mechanic:</p>
+            <h5 id="mechInven">0</h5>
+            <p>Manager:</p>
+            <h5 id="manInven">0</h5>
+          </div>
+
+        </div>
+       </div>
+    
+
+
+       <!-- This is the container for the upgrades box -->
+       <main class="container-fluid mt-5">
+         <div class="row mt-5">
+           <div class="col-12 d-flex justify-content-center">
+            <h1>UPGRADES:</h1>
+          </div>
+        </div>
+      </main>
+
+
+            <main class="container-fluid">
+              <div class="row">
+                <div class="col-12 border border-primary"> 
+                  <h3 id="tools" class="toolss"onclick="buyTools()">Tools: +$2 Every Click</h3>
+                </div>
+              </div>
+            </main>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
