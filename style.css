@@ -1,3 +1,22 @@
+body{
+  background-color: rgb(180, 180, 196);
+}
+
+.upgradesfont{
+  font-family: 'Bangers', cursive;
+}
+
+header{
+  font-family: 'Bangers', cursive;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 .truck{
@@ -24,3 +43,4 @@
 .managerr:hover{
   cursor: pointer;
 }
+

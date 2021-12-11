@@ -32,16 +32,13 @@ function makeMoney(){
   console.log(money)
 }
 
-function toolsMoney(){
-  money += 2
-}
 
 function buyTools(){
   if(money >= clickUpgrades.tools.price){
     money -= clickUpgrades.tools.price
     clickUpgrades.tools.quantity++ 
     clickUpgrades.tools.price *= 3
-    toolsMoney()
+  
   }
 
 document.getElementById("totalMoney").innerHTML = money.toString()
@@ -98,6 +95,4 @@ function buyManager(){
 function managerInterval(){
   setInterval(makeMoney, 5000)
 }
-
-
 
