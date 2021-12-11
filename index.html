@@ -60,11 +60,17 @@
 
             <main class="container-fluid">
               <div class="row">
-                <div class="col-12 border border-primary"> 
-                  <h3 id="tools" class="toolss" onclick="buyTools()">Tools: +$2 Every Click</h3>
+                <div class="col-12"> 
+                  <h3 id="tools" class="toolss border border-primary" onclick="buyTools()">(Click Upgrade) Tools: +$2 Every Click <b>$</b><b id="toolsAmnt">10</b></h3>
                 </div>
                 <div>
-                  <h3 id="ads" class="adss" onclick="buyAds()">Advertisements: +$5 Every Click</h3>
+                  <h3 id="ads" class="adss border border-primary" onclick="buyAds()">(Click Upgrade) Advertisements: +$5 Every Click <b>$</b><b id="adsAmnt">20</b></h3>
+                </div>
+                <div>
+                  <h3 id="mechanic" class="mechanicc border border-primary" onclick="buyMechanic()">(Automatic Upgrade) Mechanic: +$10 every 5 seconds <b>$</b><b id="mechAmnt">100</b></h3>
+                </div>
+                <div>
+                  <h3 id="manager" class="managerr border border-primary" onclick="buyManager()">(Automatic Upgrade) Manager: +$20 every 5 seconds <b>$</b><b id="manAmnt">250</b></h3>
                 </div>
               </div>
             </main>
