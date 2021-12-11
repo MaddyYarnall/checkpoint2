@@ -7,7 +7,7 @@ let clickUpgrades = {
     multiplier: 2
   },
   advertisements: {
-    price: 50,
+    price: 5,
     quantity: 0,
     multiplier: 5
   }
@@ -36,13 +36,25 @@ function buyTools(){
   if(money >= clickUpgrades.tools.price){
     money -= clickUpgrades.tools.price
     clickUpgrades.tools.quantity++
-    
   }
   
 
 document.getElementById("totalMoney").innerHTML = money.toString()
 document.getElementById("toolInven").innerHTML = clickUpgrades.tools.quantity.toString()
 }
+
+function buyAds(){
+  if(money >= clickUpgrades.advertisements.price){
+    money -= clickUpgrades.advertisements.price
+    clickUpgrades.advertisements.quantity++
+  }
+  
+  
+  document.getElementById("totalMoney").innerHTML = money.toString()
+  document.getElementById("adInven").innerHTML = clickUpgrades.advertisements.quantity.toString()
+}
+
+
 
 
 

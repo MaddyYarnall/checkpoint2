@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
-.toolss{
+.toolss:hover{
+  cursor: pointer;
+}
+
+.adss:hover{
   cursor: pointer;
 }
