@@ -28,17 +28,21 @@ let autoUpgrades = {
 
 function makeMoney(){
   money++
+  for (const key in clickUpgrades) {
+    const clickUpgrade = clickUpgrades[key];
+    money += clickUpgrade.quantity * clickUpgrade.multiplier
+  }
   document.getElementById("totalMoney").innerHTML = money.toString()
   console.log(money)
 }
 
-
+ //quantity * multiplier
 function buyTools(){
   if(money >= clickUpgrades.tools.price){
     money -= clickUpgrades.tools.price
     clickUpgrades.tools.quantity++ 
     clickUpgrades.tools.price *= 3
-  
+    
   }
 
 document.getElementById("totalMoney").innerHTML = money.toString()
